@@ -73,3 +73,5 @@ Route::group(array('before' => 'auth'), function () {
 		'uses' => 'App\Controllers\User\UserProfileController@getPhoto',
 	));
 });
+
+Route::get('galler', array('as' => 'galler', 'uses' => 'App\Controllers\Site\GallerController@galler'));
